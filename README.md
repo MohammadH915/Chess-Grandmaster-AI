@@ -39,13 +39,13 @@ pip install -r requirements.txt
 To start the game, run the following command in your terminal:
 
 ```bash
-python3 main.py
+python3 src/main.py
 ```
 
 ### Command Line Arguments
 
-- `-af`, `--main-agent`: Specify the main AI agent (Default: MinimaxAgent).
-- `-as`, `--second-agent`: Specify the second AI agent for AI vs. AI mode (Default: MinimaxAgent).
+- `-af`, `--main-agent`: Specify the main AI agent (Default: RandomAgent, Choices: [RandomAgent, MinimaxAgent, AlphaBetaAgent, ExpectimaxAgent]).
+- `-as`, `--second-agent`: Specify the second AI agent for AI vs. AI mode (Default: RandomAgent, Choices: [RandomAgent, MinimaxAgent, AlphaBetaAgent, ExpectimaxAgent]).
 - `-df`, `--main-agent-depth`: Set the search depth for the main AI agent (Default: 2).
 - `-ds`, `--second-agent-depth`: Set the search depth for the second AI agent (Default: 2).
 - `-p`, `--play-type`: Choose between Player vs. Bot (`PlayerVsBot`) and Bot vs. Bot (`BotVsBot`) modes (Default: PlayerVsBot).
@@ -53,7 +53,7 @@ python3 main.py
 Example to start an AI vs. AI game:
 
 ```bash
-python3 main.py -p BotVsBot
+python3 src/main.py -p BotVsBot
 ```
 
 ## AI Methods
@@ -81,3 +81,8 @@ This project is licensed under the [MIT License](LICENSE).
 - **GUI**: The graphical interface is powered by [Pygame](https://www.pygame.org/news).
 
 ---
+## Results
+AlphaBetaAgent Vs AlphaBetaAgent
+<div align="center">
+    <img src="gameplay.gif" alt="demo">
+</div>
