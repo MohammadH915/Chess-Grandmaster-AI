@@ -24,7 +24,7 @@ cd Chess-Grandmaster-AI
 2. **Create a virtual environment (optional but recommended)**
 
 ```bash
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 To start the game, run the following command in your terminal:
 
 ```bash
-python3 src/main.py
+python src/main.py
 ```
 
 ### Command Line Arguments
