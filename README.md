@@ -53,7 +53,7 @@ python src/main.py
 Example to start an AI vs. AI game:
 
 ```bash
-python3 src/main.py -p BotVsBot
+python src/main.py -p BotVsBot
 ```
 
 ## AI Methods
